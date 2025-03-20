@@ -43,11 +43,17 @@ public class SimpleTest {
         $("#react-select-4-input").setValue("Noida").pressEnter();
         $("#submit").pressEnter();
 
-        $("[id=search]").shouldHave(text("https://selenide.org"));
+        $(".table-responsive").shouldHave(text("Zhanna Zhirnova"));
+        $(".table-responsive").shouldHave(text("zhzhv@yandex.ru"));
+        $(".table-responsive").shouldHave(text("Female"));
+        $(".table-responsive").shouldHave(text("9040168579"));
+        $(".table-responsive").shouldHave(text("16 March,1991"));
+        $(".table-responsive").shouldHave(text("English"));
+        $(".table-responsive").shouldHave(text("Sports"));
+        $(".table-responsive").shouldHave(text("cat.jpg"));
+        $(".table-responsive").shouldHave(text("Tver, street 66"));
+        $(".table-responsive").shouldHave(text("NCR Noida"));
     }
-
-
-
 }
 
 
